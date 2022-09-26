@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora IMC</title>
+	<link rel="icon" href="assets/image/calculadora.png">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!--FONTES-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Montserrat:wght@100;600;700&family=Nunito+Sans:wght@400;700&family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	
+	
+	<div class="container">
+		<div class="box">
+			<h1 id="title">Calculadora IMC</h1>
+		<form onsubmit="calcular(event)">
+			<div class="campos">
+				<label>Nome:</label>
+				<input type="text" id="nome" placeholder="Digite seu nome" required autofocus>
+			</div>	
+
+			<div class="campos">
+				<label>Altura:</label>
+				<input type="number" step="0.01" id="altura" placeholder="Ex 1,70" required>
+			</div>	
+
+			<div class="campos">
+				<label class="label">Peso:</label>
+				<input type="number" step="0.01" id="peso" placeholder="Ex 80,0" required>
+			</div>
+
+			<div class="campos">
+			<button class="btn" type="submit">CALCULAR</button>
+			</div>
+			
+			<section>
+				<div id="content-result" class="box-result hide">
+					<span id="resultado"></span>
+				</div>
+			</section>
+			<div>
+				<table class="hide" id="table">
+					<tr>
+						<th>IMC</th>
+						<th>CLASSIFICAÇÃO</th>
+						<th>OBESIDADE (grau)</th>
+					</tr>
+					<tr>
+						<td>MENOR QUE 18,5</td>
+						<td align="center" >MAGREZA</td>
+						<td align="center">0</td>
+					</tr>
+					<tr>
+						<td>ENTRE 18,5 E 24,9</td>
+						<td align="center" >NORMAL</td>
+						<td align="center">0</td>
+					</tr>
+					<tr>
+						<td>ENTRE 25,0 E 29,95</td>
+						<td align="center" >SOBREPESO</td>
+						<td align="center">I</td>
+					</tr>
+					<tr>
+						<td>ENTRE 30,0 E 39,9</td>
+						<td align="center" >OBESIDADE</td>
+						<td align="center">II</td>
+					</tr>
+					<tr>
+						<td>MAIOR QUE 40,0</td>
+						<td align="center" >OBESIDADE GRAVE</td>
+						<td align="center">III</td>
+					</tr>
+					
+				</table>
+			</div>
+		</form>
+
+		<section class="midias">
+			<div class="social">
+				<a target="_blank" href="https://github.com/JonathanCF"> <img src="assets/image/github (1).png" alt="logo github"></a>
+			</div>
+			<div class="social"  id="flex">
+				<a target="_blank" href="https://www.ifpk.com.br/"> <img src="assets/image/f-inside-a-circle.png" alt="logo github"></a>
+			</div>
+			<div class="social">
+				<a target="_blank" href="https://www.linkedin.com/in/jonathan-ferreira-a2890b236/"> <img src="assets/image/linkedin.png" alt="logo github"></a>
+			</div>
+		</section>
+		</div>
+		
+	</div>
+
+
+	<script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+</html>
