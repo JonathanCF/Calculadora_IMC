@@ -13,15 +13,15 @@ let imc = (pesoInput / (alturaInput * alturaInput));
 
 
 	if (imc < 18.5) {
-		resultado.innerHTML = `òla ${nomeInput}, seu resultado foi: ${imc.toFixed(2)} você está na classificação IMC:  MAGREZA`;
+		resultado.innerHTML = `Olá ${nomeInput}, seu resultado foi: ${imc.toFixed(2)} você está na classificação IMC:  MAGREZA`;
 	}else if(imc < 24.9){
-		resultado.innerHTML = `Óla ${nomeInput}, seu resultado foi: ${imc.toFixed(2)} você está na classificação IMC:  NORMAL`;
+		resultado.innerHTML = `Olá ${nomeInput}, seu resultado foi: ${imc.toFixed(2)} você está na classificação IMC:  NORMAL`;
 	}else if (imc < 29.9){
-		resultado.innerHTML = `Óla ${nomeInput}, seu resultado foi: ${imc.toFixed(2)} você está na classificação IMC:  SOBREPESO`;
+		resultado.innerHTML = `Olá ${nomeInput}, seu resultado foi: ${imc.toFixed(2)} você está na classificação IMC:  SOBREPESO`;
 	}else if (imc < 39.9){
-		resultado.innerHTML = `Óla ${nomeInput}, seu resultado foi: ${imc.toFixed(2)} você está na classificação IMC:  OBESIDADE`;
+		resultado.innerHTML = `Olá ${nomeInput}, seu resultado foi: ${imc.toFixed(2)} você está na classificação IMC:  OBESIDADE`;
 	}else if (imc > 39.9){
-		resultado.innerHTML = `Óla ${nomeInput}, seu resultado foi: ${imc.toFixed(2)} você está na classificação IMC:  OBESIDADE GRAVE`;
+		resultado.innerHTML = `Olá ${nomeInput}, seu resultado foi: ${imc.toFixed(2)} você está na classificação IMC:  OBESIDADE GRAVE`;
 	}
 
 	resultado.classList.remove('hide')
