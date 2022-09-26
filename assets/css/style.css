@@ -5,11 +5,11 @@
 	font-family: "Lato",sans-serif;
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 600px) {
 
 	.container .box {
-		width: auto;
-		height: auto;
+		min-width: 80%;
+		min-height: 100vh;
 	}
 	.box #title{
 		font-size: 30px;
@@ -18,6 +18,10 @@
 	}
 	.box .btn {
 		font-size: 16px;
+	}
+	td{
+		font-size: 12px;
+		text-align: center;
 	}
    }
 
@@ -36,8 +40,8 @@ body {
 }
 
 .box {
-	width: 35%;
-	height: 85%;
+	min-width: 35%;
+	min-height: 85%;
 	background-color: #00000060;
 	color: #FFF;
 	display: flex;
@@ -99,14 +103,12 @@ label {
 
 .box-result {
 	border: 2px solid #CCC;
-	height: 60px;
-	width: 80%;
+	display: flex;
 	margin-top: 10px;
 	margin-bottom: 15px;
-	display: flex;
 	flex: 1;
-	margin-left: 55px;
 	transition: transform 0.9s;
+	width: 80%;
 }
 
 .box-result:hover {
@@ -117,6 +119,12 @@ label {
 	display: none;
 }
 
+section{
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 table {
 	padding: 5px;
