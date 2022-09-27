@@ -74,6 +74,9 @@ body {
     height: 40px;
 	outline: none;
 	font-size: 20px;
+}
+
+input {
 	background-color: #FFF;
 }
 
